@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Woofpedia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-app="dogApp" ng-controller="dogController">
+  <div class="main-div">
+  <h1>WOOFPEDIA</h1>
+
+  <form ng-submit="getDogDetails()">
+    <label for="breedName">Enter a dog breed:</label>
+    <input type="text" id="breedName" ng-model="breedName" placeholder="Enter breed...">
+    <button type="submit">Search</button>
+  </form>
+
+  <div ng-show="showDetails" class="result-box">
+    <h2>{{ breedDetails.breedName }}</h2>
+    <p><strong>Height:</strong> {{ breedDetails.height }}</p>
+    <p><strong>Weight:</strong> {{ breedDetails.weight }}</p>
+    <p><strong>Lifespan:</strong> {{ breedDetails.lifespan }}</p>
+    <p><strong>Temperament:</strong> {{ breedDetails.temperament }}</p>
+    <img src="{{breedDetails.imageUrl}}">
+  </div>
+
+  <button ng-click="getDogHistory()" class="history-button">View Breed Details History</button>
+  
+  <table ng-show="showHistory">
+    <thead>
+      <tr>
+        <th>Breed Name</th>
+        <th>Height</th>
+        <th>Weight</th>
+        <th>Lifespan</th>
+        <th>Temperament</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="dog in dogHistory">
+        <td>{{ dog.breed }}</td>
+        <td>{{ dog.height }}</td>
+        <td>{{ dog.weight }}</td>
+        <td>{{ dog.lifespan }}</td>
+        <td>{{ dog.temperament }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

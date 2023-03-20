@@ -1,0 +1,129 @@
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  form {
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  div {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #428bca;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddbdb;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  }
+  
+  .history-button{
+    margin: 50px auto;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  body{
+    background-color: rgb(255, 221, 182);
+    overflow-x:hidden;
+  }
+
+  .main-div{
+    background-color: whitesmoke;
+    padding: 10px 50px 50px 50px;
+    border-radius: 20px;
+    max-width: 1000px;
+    border: 1px solid grey;
+  }
+
+  .result-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+    max-width: 600px;
+    padding: 10px 10px 50px 10px;
+  } 
