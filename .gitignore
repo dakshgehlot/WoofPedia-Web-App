@@ -1,0 +1,6 @@
+.env
+node_modules
+*.txt
+*.docx
+*.pdf
+*.rar
